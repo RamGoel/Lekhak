@@ -1,0 +1,440 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('1.jpg');
+    background-size: cover ;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+
+
+.main {
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    animation:change 2s;
+
+
+}
+
+
+.title-main {
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 50px;
+    margin-bottom: 0;
+
+
+    l
+}
+
+
+.bottom {
+    color: white;
+    font-size: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    padding: 10px;
+    letter-spacing: 1px;
+
+}
+
+
+.slogan {
+    margin: 0;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 10vw;
+    margin-top: 30px;
+
+
+}
+
+.opt {
+
+    padding: 10px;
+    width: 20vw;
+    font-size: large;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-shadow: 1px 1px 5px;
+}
+
+body{
+    
+}
+
+
+
+/*
+Register.htnl CSS*/
+
+
+
+.title-reg {
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    margin-bottom: 0;
+
+
+}
+
+
+.slogan-reg {
+    margin: 0;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+
+.option-reg {
+    padding: 10px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.opt-reg {
+    padding: 10px;
+    border: none;
+    width: 25vw;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: orange;
+
+
+}
+.opt-sellr {
+    padding: 10px;
+    border: none;
+    width: 25vw;
+    border-radius: 10px;
+    margin: auto;
+  
+    color: black;
+    margin-bottom: 20px;
+    background-color: white
+
+
+}
+
+.opt-sellr #btn{
+    margin-top: 20px;
+
+
+}
+.file {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    
+
+
+}
+
+
+
+
+/*
+    CSS of Login.html
+*/
+
+
+
+
+.title-log {
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    margin-bottom: 0;
+    cursor: pointer;
+    
+
+
+}
+
+
+
+
+.slogan-log {
+    margin: 0;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+
+.opt-log{
+    padding: 10px;
+    border: none;
+    width: 25vw;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: orange;
+
+
+}
+
+.inputs{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.item-ico{
+    background-color: orange;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+.search-input{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.search-btn{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.option-log {
+    padding: 10px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Prod-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px ;
+    column-gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+    User.html CSS
+*/
+
+.products{
+    display: grid;   
+    grid-template-columns: auto auto auto;     
+
+}
+/*
+    Product.html CSS
+*/
+
+.cato,.valo{
+    padding: 5px;
+    padding-right: 30px;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.valo-list{
+    padding:0;
+}
+
+.cateo{
+    font-weight: 600;
+    
+
+}
+
+
+.rev-img{
+    width: 45px;
+    border: 1px solid black;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+}
+.data-2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.extra{
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.product-2{
+    width: 40%;
+}
+.text-2{
+    background-color: rgb(15, 148, 193)
+}
+
+
+.action-btn{
+    background-color: rgb(42, 13, 169);
+    border: none;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.actions{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+
+/*
+    Animation
+*/
+
+@keyframes change {
+    from{
+       opacity: 0;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+/*
+    Media Queries
+*/
+
+
+
+@media screen and (max-width:768px){
+    .opt-log{
+      width: 80vw;
+      margin-bottom: 10px;
+      
+      
+    }
+    .opt{
+        width: 80vw;
+        
+    }
+    .options{
+        padding: 20px;
+    }
+
+    .slogan-log{
+        margin-bottom: 20px;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+    .opt-reg, .opt-sellr{
+        width: 80vw;
+    }
+
+    
+.data{
+    display: flex;
+    flex-direction: row;
+}
+.data-2{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.extra{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-2{
+    width: 100%;
+}
+
+.gallery{
+   display: none;
+}
+.text-2{
+    background-color: transparent;
+}
+
+.actions{
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.action-btn{
+    padding: 10px;
+}
+
+.Prod-list{
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+}
+}
