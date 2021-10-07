@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="tachyons.min.css">
+</head>
+<body>
+    <div class="main  ">
+        
+        <h2 class="title-log mb2">Welcome</h2>
+        <p class=" bg-white black ma wft mt3 br2 pa1 ph3 ">Add your Post Now</p>
+    
+           <form class="option-log mt3" method="POST" action="/post" >
+         <!--Add div.inputs-->
+               <input type="text" class="opt-log" name="title" placeholder="Post Title" required>
+               <textarea type="text" class="opt-log" name="content" placeholder="Post Content" required ></textarea>
+               <input type="text" class="opt-log" name="cato" placeholder="Post Tags" required>
+           
+                <button id="btn" type="submit"  class="opt-sellr mt3">Submit</button>
+               
+            </form>
+            <p class="tc white br3 f5 wft bg-dark-red pa2 ma"><%=mess%></p>
+       
+        
+        <p class="bottom">All Rights Reserved @Lekhak.in - Made with Love in India </p>
+    </div>
+</body>
+</html>
+
