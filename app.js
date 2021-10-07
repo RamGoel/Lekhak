@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 const form = require('formidable')
 const internal = require('stream')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000;
 
 
 
@@ -112,6 +112,6 @@ app.post('/post', (req, res) => {
 
 
 
-app.listen(3000, () => {
-    console.log('App listening on port 3000!');
+app.listen(port, () => {
+    console.log(`App listening on port ${port}!`);
 });
