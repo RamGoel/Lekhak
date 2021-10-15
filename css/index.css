@@ -4,6 +4,40 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+
+.accountIcon{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.headTxt{
+    font-size: 10px;
+    
+}
+
+
+.articles{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+@media screen and (max-width:500px){
+.articles{
+    grid-template-columns: auto ;
+}
+}
+
+@media screen and (min-width:500px) and (max-width:800px){
+.articles{
+    grid-template-columns: auto auto;
+}
+}
+
+
+a{
+    cursor: pointer;
+}
 body {
     padding: 0;
     margin: 0;

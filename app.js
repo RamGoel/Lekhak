@@ -25,12 +25,13 @@ app.use(express.urlencoded({extended:true}))
 
 //connecting to DB
 
-mongoose.connect('mongodb+srv://lekhak-user:ramgoel@cluster0.wtutu.mongodb.net/lekhak?retryWrites=true&w=majority')
+mongoose.connect('mongodb://localhost:27017/lekhak')
 
 var PostSchema= new mongoose.Schema({
     title:String,
     content:String,
-    cato:String
+    cato:String,
+    writer:String
 })
 
 
@@ -40,11 +41,26 @@ var PostModel = mongoose.model('posts', PostSchema)
 
 //validation Functions
 
+// function mixQuery(query){
+//     let qst=query.slice(-3)
+//     console.log(qst)
+//     if (qst =="ing"){
+//         let qus=query-qst;
+//         console.error(qus)
+//         return qus;
+//     }
+//     else{
+//         return true
+//     }
+
+// }
+//validation Functions
+
 function contentValidate(content){
     var contentArray=content.split(' ');
 
     console.log(contentArray)
-    if (contentArray.length >20){
+    if (contentArray.length >10){
         return true
     }else{
         return false
@@ -54,39 +70,51 @@ function contentValidate(content){
 //get Request handling
 
 app.get('/', (req, res) => {
+    console.log(req.url)
     res.render('index', {
         mess: 'Register Now'
     })
 });
+app.get('/profile', async(req, res) => {
+    console.log(req.url)
+    
+    var data= await PostModel.find({cato:"gaming"}).exec();
+    
+    res.render('profile',{data:data})
+});
+
 
 
 
 app.get('/read', async(req, res) => {
+    console.log(req.url)
     const dt={}
-    var data= await PostModel.find(dt).exec();
-    console.log(data)
+    var data= await PostModel.find(dt).sort({_id:-1}).exec();
+    
     res.render('Articles',{data:data})
 
 });
 
 app.post('/find',async(req,res) =>{
-        
-        var data = await PostModel.find({cato:req.body.item}).exec();
-        if(!data){
-            res.send('No Records Found')
-        }else{
-            res.render('search',{data:data})
-        }
-       
+    
+            var data = await PostModel.find({cato:req.body.item}).sort({_id:-1}).exec();
+            if(!data){
+                res.send('No Records Found')
+            }else{
+                res.render('search',{data:data})
+            }
+              
 })
 
 
 app.get('/add', (req, res) => {
+    console.log(req.url)
     res.render('Add',{mess:''})
 });
 
 
 app.get('/search',(req,res) =>{
+    console.log(req.url)
     res.render('search',{data:''})
 })
 
@@ -96,17 +124,22 @@ app.get('/search',(req,res) =>{
 
 app.post('/post', (req, res) => {
 
+
+    console.log(req.url)
     var checkContent=contentValidate(req.body.content)
 
     console.log(checkContent)
 
     if(checkContent==true){
-
+        let cato=req.body.cato
+        console.log(cato)
+        req.body.cato=cato.toLowerCase()
+        console.log(cato.toLowerCase())
         postData= new PostModel(req.body);
         postData.save()
         res.render('Add',{mess:'Post Submitted'})
     }else{
-        res.render('Add',{mess:'Minimum 20 Words of content required'})
+        res.render('Add',{mess:'Minimum 10 Words of content required'})
     }
 });
 
