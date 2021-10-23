@@ -25,7 +25,7 @@ app.use(express.urlencoded({extended:true}))
 
 //connecting to DB
 
-mongoose.connect('mongodb://localhost:27017/lekhak')
+mongoose.connect("mongodb+srv://lekhak-user:ram123@cluster0.wtutu.mongodb.net/lekhak?retryWrites=true&w=majority")
 
 var PostSchema= new mongoose.Schema({
     title:String,
