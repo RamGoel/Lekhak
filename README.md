@@ -3,7 +3,7 @@ An App which stores user written articles into database and also fetches them fr
 <br>
 
 <hr>
-
+<img src="im1 (1).png">
 Have a Clean and Simple UI for Posting Articles.
 <hr>
 <br>
