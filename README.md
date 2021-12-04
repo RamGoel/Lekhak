@@ -15,7 +15,6 @@ You Can Post Articles anonymously without any logins.
 Anyone from the world can come and read the newest articles posted.
 <br>
 <hr>
-<img src="![Screenshot 2021-12-04 at 23-02-59 Document](https://user-images.githubusercontent.com/71088429/144718948-4a0cf14c-02a5-46ec-9825-af6147a35893.png)
-im1 (1).png">
+<img src="![Screenshot 2021-12-04 at 23-02-59 Document](https://user-images.githubusercontent.com/71088429/144718948-4a0cf14c-02a5-46ec-9825-af6147a35893.png)">
 Users can also search for a Particular Topic.
 
