@@ -1,8 +1,18 @@
 # Lekhak
 An App which stores user written articles into database and also fetches them from the database.
 <br>
+## Steps to Setup on Local Machine
 
-<hr>
+- Fork this Repository
+- Clone this Repositiory `git clone fork_url`
+- Create New Branch `git switch -c new-branch-name`
+- Make changes to the App
+- Stage Changes `git add .`
+- Commit Changes `git commit -m "commit-message"`
+- Push Changes `git push`
+
+
+## Snapshots
 <img src="im1 (1).png">
 🔥 Have a Clean and Simple UI for Posting Articles.
 <hr>
