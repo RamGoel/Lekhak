@@ -77,12 +77,16 @@ app.get('/', (req, res) => {
 });
 app.get('/profile', async(req, res) => {
     console.log(req.url)
-    
+
     var data= await PostModel.find({cato:"gaming"}).exec();
-    
+
     res.render('profile',{data:data})
 });
 
+app.get('/help',async(req,res)=>{
+    console.log(req.url)
+    res.render('help')
+});
 
 
 
@@ -90,20 +94,20 @@ app.get('/read', async(req, res) => {
     console.log(req.url)
     const dt={}
     var data= await PostModel.find(dt).sort({_id:-1}).exec();
-    
+
     res.render('Articles',{data:data})
 
 });
 
 app.post('/find',async(req,res) =>{
-    
+
             var data = await PostModel.find({cato:req.body.item}).sort({_id:-1}).exec();
             if(!data){
                 res.send('No Records Found')
             }else{
                 res.render('search',{data:data})
             }
-              
+
 })
 
 
