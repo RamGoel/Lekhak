@@ -234,12 +234,14 @@ Register.htnl CSS*/
     padding: 10px;
     border: none;
     width: 25vw;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: auto;
     margin-bottom: 20px;
-    background-color: orange;
-
-
+    background-color: white;
+    outline: none;
+}
+.txt-area{
+height: 150px;
 }
 
 .inputs{
