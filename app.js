@@ -118,6 +118,9 @@ app.get('/search',(req,res) =>{
     res.render('search',{data:''})
 })
 
+app.get('/help', (req, res) => {
+    res.render('help', {})
+})
 
 
 //POST Request handling

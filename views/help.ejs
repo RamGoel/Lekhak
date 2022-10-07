@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="tachyons.min.css">
+    <link rel="stylesheet" href="iconmonstr-iconic-font.min.css">
+</head>
+
+<style>
+    .help-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-heading {
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+        margin: 50px 0 0 0;
+    }
+    .explanation {
+        color: black;
+        background-color: white;
+        max-width: 550px;
+        margin: 25px 0 0 0;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+    }
+    .heading {
+        margin: 10px 0 5px 0;
+        text-align: start;
+    }
+    .description {
+        line-height: 23px;
+        text-align: start;
+        margin: 5px 10px 15px 10px;
+    }
+
+
+    @media screen and (max-width:500px){
+        .explanation {
+        max-width: 90%;
+        margin: 20px 0 30px 0;
+        padding: 10px 15px 10px 15px;
+        }
+        .main-heading{
+            font-size: 35px;
+        }
+        .description {
+            margin: 5px 0 20px 0;
+        }
+    }
+
+    @media screen and (min-width:500px) and (max-width:800px){
+        .explanation {
+            max-width: 450px;
+        }
+        .main-heading{
+            font-size: 35px;
+        }
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="head-user flex pa2 tc mb0 justify-between bg-white black shadow-3 ">
+            <a href="/">
+                <h2 class="title-user black  ma0">Lekhak</h2>
+            </a>
+        </div>
+        
+        <div class="help-section">
+            <h1 class="main-heading">Need Help?</h1>
+            <div class="explanation">
+                <div class="help-explanation-sec">
+                    <h3 class="heading">Explaining the Article section</h3>
+                    <p class="description">
+                        To access the written articles click the "Read Article" button in the homepage. 
+                        The article page consists of different topics reanging from various ideas and things in general, easily identified by the tag on the article post. 
+                    </p>
+                </div>
+                <div class="help-explanation-sec">
+                    <h3 class="heading">How do I create an Article?</h3>
+                    <p class="description">
+                        To post an article head over to the "Add Article" page by clicking the button. 
+                        You are required to fill the various fields as you wish but ensure that your content is above the required 10words count. 
+                    </p>
+                </div>
+                <div class="help-explanation-sec">
+                    <h3 class="heading">How to search for an Article?</h3>
+                    <p class="description">
+                        To search visit the "Read Articles" page and click on the search bar icon.
+                        Searching in the LEKHAK application is done using the specific tags of the article post. Search requests with a word misspelt will return void.
+                    </p>
+                </div>
+            </div>
+
+            <div class="help-form">
+                <!-- <form action="/find" method="POST" class="search flex pa3 ">
+                    <input type="search" class=" br3 bn bg-light-gray mr3 w-100  black ph2 pv2 " placeholder="Search" name="item">
+                    <button type="submit " class="w-20 ma h-100 pa2 bg-white br3 bn ">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
