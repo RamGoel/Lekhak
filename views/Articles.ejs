@@ -1,69 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="tachyons.min.css" />
+    <link rel="stylesheet" href="iconmonstr-iconic-font.min.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="tachyons.min.css">
-    <link rel="stylesheet" href="iconmonstr-iconic-font.min.css">
-</head>
-
-<style>
-    .articles{
-            display: grid;
-            grid-template-columns: auto auto auto;
+  <style>
+    .articles {
+      display: grid;
+      grid-template-columns: auto auto auto;
     }
 
-
-    @media screen and (max-width:500px){
-        .articles{
-            grid-template-columns: auto ;
-        }
+    @media screen and (max-width: 500px) {
+      .articles {
+        grid-template-columns: auto;
+      }
     }
 
-    @media screen and (min-width:500px) and (max-width:800px){
-        .articles{
-            grid-template-columns: auto auto;
-        }
+    @media screen and (min-width: 500px) and (max-width: 800px) {
+      .articles {
+        grid-template-columns: auto auto;
+      }
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <div class="main">
-        <div class="head-user flex pa2 tc mb0 justify-between bg-white black shadow-3 ">
-            <a href="/">
-                <h2 class="title-user black  ma0 flex justify-between">Lekhak</h2>
-            </a>
-           
-            <a class="wft bg-white bn " href="/search"> <img src="2.jpg" class="w-100 fr" height="30px" alt="search-image"></a>
+      <div
+        class="head-user flex pa2 tc mb0 justify-between bg-white black shadow-3"
+      >
+        <a href="/">
+          <h2 class="title-user black ma0 flex justify-between">Lekhak</h2>
+        </a>
 
+        <a class="wft bg-white bn" href="/search">
+          <img src="2.jpg" class="w-100 fr" height="30px" alt="search-image"
+        /></a>
+      </div>
+
+      <div class="articles">
+        <% for(var i = 0; i < data.length; i++) { %>
+        <div class="bg-white w-90 mv3 tc center ph3 pv1 br3">
+          <h3 class="f3 tc br3 bg-black white pa1 ph3 wft">
+            <%= data[i].title %>
+          </h3>
+
+          <p class="tj"><%= data[i].content %></p>
+          <p class="bg-light-gray black pa2 br3 wft"><%= data[i].cato %></p>
         </div>
-         
-            <div class="articles">
-
-            
-            <% for(var i = 0; i < data.length; i++)  {  %>
-                <div class="  bg-white w-90 mv3 tc center ph3 pv1 br3">
-            <h3 class="f3  tc br3 bg-black white  pa1 ph3 wft"><%= data[i].title %></h3>
-            
-            <p class="tj"><%= data[i].content %></p>
-            <p class=" bg-light-gray black  pa2 br3 wft"><%= data[i].cato %></p>
-        </div>
-            <% } %>
-      
- 
-        </div>
-
-        
-        
-
-
-
-
+        <% } %>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
