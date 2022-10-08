@@ -173,18 +173,14 @@ Register.htnl CSS*/
     width: 25vw;
     border-radius: 10px;
     margin: auto;
-  
-    color: black;
+    color: white;
     margin-bottom: 20px;
-    background-color: white
-
-
+    background-color: grey;
+    cursor:pointer;
 }
 
 .opt-sellr #btn{
     margin-top: 20px;
-
-
 }
 .file {
     padding: 10px;
@@ -234,12 +230,14 @@ Register.htnl CSS*/
     padding: 10px;
     border: none;
     width: 25vw;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: auto;
     margin-bottom: 20px;
-    background-color: orange;
-
-
+    background-color: white;
+    outline: none;
+}
+.txt-area{
+height: 150px;
 }
 
 .inputs{
@@ -249,6 +247,18 @@ Register.htnl CSS*/
     flex-direction: column;
 }
 
+
+
+
+input::-webkit-input-placeholder {
+    font-size: 15px;
+    opacity:0.5;
+}
+
+textarea::-webkit-input-placeholder {
+    font-size: 15px;   
+    opacity:0.5;
+}
 
 
 .item-ico{
