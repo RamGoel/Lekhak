@@ -5,7 +5,7 @@ An App which stores user written articles into database and also fetches them fr
 
 - Fork this Repository
 - Clone this Repositiory `git clone fork_url`
-- Create New Branch `git switch -c new-branch-name`
+- Create New Branch `git switch -c new-branch-name` or `git branch branch-name` & `git checkout branch-name`
 - Make changes to the App
 - Stage Changes `git add .`
 - Commit Changes `git commit -m "commit-message"`
