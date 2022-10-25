@@ -28,3 +28,6 @@ An App which stores user written articles into database and also fetches them fr
 <img src="im2.png">
 🔥 Users can also search for a Particular Topic.
 
+##contributors
+[Ram Goel](https://github.com/RamGoel)
+
