@@ -27,6 +27,11 @@ An App which stores user written articles into database and also fetches them fr
 <hr>
 <img src="im2.png">
 🔥 Users can also search for a Particular Topic.
+<br>
+<hr>
+![](https://user-images.githubusercontent.com/90157563/194616489-ab758e77-685b-403d-b2ab-8c0808f994b9.png)
+🔥 Users can take help from help page
+
 
 ## contributors
 [Ram Goel](https://github.com/RamGoel)
